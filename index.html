@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>VibeStream – OTT SaaS Platform</title>
+
+<style>
+:root {
+  --primary: #6C63FF;
+  --accent: #00E5FF;
+  --bg: #0B0F1A;
+  --card: #151A2D;
+  --text: #FFFFFF;
+  --muted: #B8C1EC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 70px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(11,15,26,0.9);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+nav a {
+  margin-left: 30px;
+  font-size: 15px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav a.btn {
+  background: var(--primary);
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 70px;
+  background: radial-gradient(circle at top left, #1a1f45, #0B0F1A);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  padding: 14px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+/* SECTION */
+section {
+  padding: 90px 70px;
+}
+
+.section-title {
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-desc {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 60px;
+  color: var(--muted);
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.feature-card p {
+  color: var(--muted);
+}
+
+/* PRICING */
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+.price-card {
+  background: linear-gradient(180deg, #151A2D, #0B0F1A);
+  padding: 40px;
+  border-radius: 18px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.price-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 42px;
+  color: var(--accent);
+  margin: 20px 0;
+}
+
+.price-card ul {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.price-card ul li {
+  margin: 10px 0;
+  color: var(--muted);
+}
+
+.price-card .btn {
+  background: var(--primary);
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: #070A14;
+  padding: 35px;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  section {
+    padding: 70px 20px;
+  }
+  .hero {
+    padding: 0 20px;
+  }
+  .hero h1 {
+    font-size: 38px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">VibeStream</div>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#" class="btn">Get Started</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Build, Launch & Scale Your OTT Platform</h1>
+    <p>
+      VibeStream is a complete SaaS solution for streaming businesses,
+      creators, and enterprises to deliver premium video experiences.
+    </p>
+    <a href="#" class="btn">Start Free Trial</a>
+  </div>
+</div>
+
+<section id="features">
+  <h2 class="section-title">Powerful Streaming Features</h2>
+  <p class="section-desc">
+    Everything you need to run a modern OTT business, from content delivery
+    to monetization and analytics.
+  </p>
+
+  <div class="features">
+    <div class="feature-card">
+      <h3>Adaptive Streaming</h3>
+      <p>Automatically adjusts video quality based on user bandwidth.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Content Security</h3>
+      <p>DRM, watermarking, and secure access control.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Monetization</h3>
+      <p>Subscriptions, rentals, ads, and pay-per-view support.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Analytics Dashboard</h3>
+      <p>Track engagement, watch time, and revenue in real time.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2 class="section-title">Flexible Pricing</h2>
+  <p class="section-desc">
+    Choose a plan that fits your business size and growth goals.
+  </p>
+
+  <div class="pricing">
+    <div class="price-card">
+      <h3>Starter</h3>
+      <div class="price">₹299</div>
+      <ul>
+        <li>HD Streaming</li>
+        <li>1,000 Viewers</li>
+        <li>Email Support</li>
+      </ul>
+      <a href="#" class="btn">Select Plan</a>
+    </div>
+
+    <div class="price-card">
+      <h3>Growth</h3>
+      <div class="price">₹699</div>
+      <ul>
+        <li>Full HD Streaming</li>
+        <li>10,000 Viewers</li>
+        <li>Advanced Analytics</li>
+      </ul>
+      <a href="#" class="btn">Select Plan</a>
+    </div>
+
+    <div class="price-card">
+      <h3>Enterprise</h3>
+      <div class="price">₹1299</div>
+      <ul>
+        <li>4K Streaming</li>
+        <li>Unlimited Viewers</li>
+        <li>Dedicated Support</li>
+      </ul>
+      <a href="#" class="btn">Contact Sales</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 VibeStream. All rights reserved.
+</footer>
+
+</body>
+</html>
